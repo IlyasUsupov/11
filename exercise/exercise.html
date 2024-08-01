@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base of Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon/free-icon-dumbbell-882201.png" alt="Trophy" class="trophy-icon">
+            <span class="title">base of techniques</span>
+           <a href="../index.html" class="close-btn2">
+            <span class="close-btn">&#10022;</span>
+           </a>  
+        </div>
+
+        <!-- Упражнение с отжиманиями -->
+        <div class="item" onclick="openModalPushup()">
+            <div class="circle">
+                <img src="icon/free-icon-arrow-6909659.png" alt="Biceps" class="icon">
+            </div>
+            <span>Отжимание</span>
+        </div>
+        <div class="item" onclick="openModalPullup()">
+            <div class="circle">
+                <img src="icon/free-icon-arrow-6909659.png" alt="Biceps" class="icon">
+            </div>
+            <span>Подтягивания</span>
+        </div>
+        
+        <!-- Модальное окно ОТЖИВАНИЕ-->
+        <div id="modalPush-up" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+                <h2>Техника выполнения отжиманий</h2>
+                <p>Отжимания - это одно из самых простых, но в то же время эффективных упражнений для развития мышц груди, плеч и трицепсов. Вот пошаговая инструкция, как правильно выполнять отжимания:</p>
+                <ol>
+                    <li>Начните с положения лежа, руки на ширине плеч, тело образует прямую линию от головы до пяток.</li>
+                    <li>Опуститесь вниз, сгибая руки в локтях, пока грудь почти не коснется пола.</li>
+                    <li>Поднимитесь обратно, выпрямляя руки, возвращаясь в исходное положение.</li>
+                    <li>Держите корпус прямым на протяжении всего упражнения.</li>
+                </ol>
+                <img src="image/1.jpg" alt="Техника выполнения отжиманий - Шаг 1" class="modal-image">
+                <img src="image/2.jpg" alt="Техника выполнения отжиманий - Шаг 2" class="modal-image">
+            </div>
+        </div>
+        <!-- Модальное окно ПОДТЯГИВАНИЕ-->
+        <div id="modalPull-up" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+                <h2>Техника выполнения подтягиваний</h2>
+                <p>Подтягивания — это одно из самых эффективных упражнений для развития мышц спины, плеч и бицепсов. Вот пошаговая инструкция, как правильно выполнять подтягивания:</p>
+                <ol>
+                    <li>Найдите перекладину, которая находится на уровне ваших рук. Возьмитесь за перекладину хватом чуть шире плеч, ладони направлены от себя</li>
+                    <li>Повисните на перекладине, полностью выпрямив руки. Держите тело в прямой линии, ноги могут быть слегка согнуты в коленях или скрещены</li>
+                    <li>На выдохе начинайте подтягиваться, сгибая локти и подтягивая грудь к перекладине. Старайтесь не раскачиваться и не использовать инерцию</li>
+                    <li>На пике движения задержитесь на мгновение, чтобы активировать мышцы спины и рук.</li>
+                    <li>На вдохе медленно опуститесь в исходное положение, полностью выпрямляя руки. Не позволяйте телу резко падать вниз — контролируйте движение.</li>
+                    <li>Выполняйте необходимое количество повторений, сохраняя правильную технику на протяжении всего упражнения</li>
+                    <h3>                                  Советы по выполнению подтягиваний                                                  </h3>
+                    <h5>Перед началом подтягиваний обязательно проведите разминку, чтобы подготовить мышцы и суставы.</h5>
+                    <h5>Если вам сложно выполнить подтягивания, начните с негативных подтягиваний или используйте резинку для поддержки.</h5>
+                    <h5>Постепенно увеличивайте количество повторений и подходов, чтобы развивать силу и выносливость.</h5>
+                </ol>
+                <img src="image/large.jpg" alt="Техника выполнения отжиманий - Шаг 1" class="modal-image">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModalPushup() {
+            document.getElementById("modalPush-up").style.display = "block";
+        }
+        function openModalPullup() {
+            document.getElementById("modalPull-up").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
